@@ -1,0 +1,103 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$theme: #D91E18;
+$theme_b: #dd1b52;
+$theme_gr:#D2D7D3;
+$theme_gr_drk:#f58026;
+$theme_grn:#f59222;
+$theme_text: #6C7A89;
+$bts: .5s;
+
+html, body{
+	background-color: #D2D7D3 !important;
+	height:100%;
+}
+
+hr.blue{
+    background-color:$theme_b;
+    border-color: $theme_b;
+    color:$theme_b;
+    margin-top:0px;
+}
+
+
+.container{
+	height:100% !important;
+}
+
+.row .heading{
+	padding-left: 5%;
+	color:$theme_gr_drk;
+}
+
+.row .padded-top{
+	padding-top: 10%;
+}
+
+
+.row.padded-top{
+  height:50%!important;
+ }
+
+ .col-xs-12.col-sm-12.col-md-8.col-lg-8.col-xl-8, .panel.panel-default.panel-out, .panel-body.scroller{
+ 	height:100% !important;
+ }
+
+.check-in{
+	background-color:$theme_grn!important;
+	color:white!important;
+	border-color: $theme_grn!important;
+
+}
+.check-in:active{
+	background-color: $theme_grn !important;
+	opacity:.9 !important;
+	color:white !important;
+	border-color: $theme_grn !important;
+}
+
+.check-in:hover, .check-in:visited{
+		background-color: $theme_grn;
+		opacity:.7;
+		color:white;
+		border-color: $theme_grn;
+}
+
+.padding-left-5{
+  padding-left: 5% !important;
+}
+
+.padding-right-5{
+  padding-right: 5% !important;
+}
+
+.padding-bottom-5{
+  padding-bottom: 5% !important;
+}
+
+
+@media (min-width: 0px) and (max-width:999px){
+	.show-mobile {
+        display: block;
+        max-width:80%;
+        position:relative;
+        margin:auto;
+     }
+      .hide-mobile {
+        display: none;
+     }
+}
+
+/* BEGIN NORMAL BROWSER STYLINGS */
+@media  (min-width:1000px){
+	.show-mobile {
+        display: none;
+     }
+      .hide-mobile {
+        display: block;
+        height:100%;
+
+     }
+}

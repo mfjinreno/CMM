@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@font-face {
+	font-family: 'Franklin Gothic';
+	src: url('/assets/fonts/fgothic.ttf')format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+$theme: #f59222;
+$theme_b: #dd1b52;
+$theme_gr:#f59222;
+$theme_text: #6C7A89;
+$bts: .5s;
+
+.btn-theme{
+	border-color: $theme;
+	background-color: white;
+	color:$theme_text;
+	-moz-transition: opacity $bts, background-color $bts, color $bts;
+	-webkit-transition: opacity $bts, background-color $bts, color $bts;
+	transition: opacity $bts, background-color $bts, color $bts;
+}
+
+.btn-theme:hover, .btn-theme:visited{
+	background-color: $theme;
+	opacity:.7;
+	color:white;
+	border-color: $theme_gr;
+}
+
+.btn-theme:active{
+	background-color: $theme !important;
+	opacity:.9 !important;
+	color:white !important;
+	border-color: $theme_gr !important;
+}
+
+
+input:focus {
+    border-color: $theme !important;
+    box-shadow: 0 0 5px $theme !important;
+}
+
+.padded-top{
+	padding-top: 5%;
+}
+
+.login-head{
+	color: $theme_b;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 500%;
+}
+
+.panel-shadowed{
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.grey{
+	background-color: $theme_gr;
+}

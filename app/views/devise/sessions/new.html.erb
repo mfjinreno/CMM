@@ -1,0 +1,51 @@
+
+<div class="container padded-top">
+  <div class = "panel panel-default panel-shadowed">
+    <div class = "panel-body">
+      <div class = "row">
+        <div class = "text-center">
+        <h1 class = "login-head">Welcome!</h1>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-sm-8 col-sm-offset-2">
+          <h2 class = "text-center">Log in</h2>
+        </div>
+      </div>
+    <form class="new_user form-horizontal" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="0NwliJTedtzClImhEUo3On7uawhUAbZIFhl+YxnrlaxMxDRSYmIjPEFjS/0edDflH9Ez8EqsuLeefmGFmKgUPA==">
+      <div class="field row">
+        <label for="user_email" class = "col-sm-2 col-sm-offset-2 control-label">Email</label>
+        <div class = "col-sm-4">
+          <input autofocus="autofocus" class = "form-control" type="email" value="" name="user[email]" id="user_email">
+        </div>
+      </div>
+      <br/>
+
+      <div class="field row">
+        <label for="user_password" class = "col-sm-2  col-sm-offset-2 control-label">Password</label>
+        <div class = "col-sm-4">
+          <input autocomplete="off" class= "form-control" type="password" name="user[password]" id="user_password">
+        </div>
+      </div>
+      <br/>
+
+      <div class = "row">
+        <div class = "col-sm-offset-4 col-sm-4">
+          <div class="actions">
+            <button type="submit" class = "btn btn-primary btn-lg btn-block btn-theme"  name="commit"/>Log in</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+      <br/>
+      <div class = "row">
+        <div class = "col-sm-offset-4 col-sm-2">
+          <a href="/users/sign_up">Sign up</a><br>
+          <a href="/users/password/new">Forgot your password?</a><br>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
